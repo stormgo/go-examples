@@ -4,7 +4,9 @@
 [Part1]
 (http://golangtutorials.blogspot.com/2011/06/methods-on-structs.html)
 
-*Many object oriented languages have a concept of this or self that implicitly refers to the current instance. Go has no such keyword. When defining a function or method associated with a type, it is given as a named variable - in this case (r Rectangle) and then within the function the variable r is used.*
+*Many object oriented languages have a concept of **this** or **self** that implicitly refers to the current instance.
+
+Go has no such keyword. When defining a function or method associated with a type, it is given as a named variable - in this case (r Rectangle) and then within the function the variable r is used.*
 
 ***
 
