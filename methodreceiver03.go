@@ -1,3 +1,5 @@
+// http://stackoverflow.com/questions/25343853/golang-method-receivers
+
 package main
 
 import "fmt"
