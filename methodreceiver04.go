@@ -37,8 +37,8 @@ func (d dog) playdead() {
 }
 
 func (d *dog) rename(newname string) {
-	fmt.Println((*d).name, " will forever more answer to", newname)
-	(*d).name = newname
+	fmt.Println(d.name, " will forever more answer to", newname)
+	d.name = newname
 }
 
 func main() {
