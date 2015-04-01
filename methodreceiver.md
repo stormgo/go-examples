@@ -15,3 +15,8 @@ From the golang FAQ is a description of:
 
 [Should I define methods on values or pointers ?]
 (http://golang.org/doc/faq#methods_on_values_or_pointers)
+
+This
+[post]
+(http://cplus.about.com/od/google-go/a/programming-golang-tutorial-functions-methods.htm)
+has a more detailed example of using method receivers with subclasses.
