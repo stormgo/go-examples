@@ -1,3 +1,5 @@
+// http://cplus.about.com/od/google-go/a/google-go-tutorial-nine-interfaces.htm
+
 package main
 
 import "fmt"
