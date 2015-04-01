@@ -4,7 +4,7 @@ package main
 
 import "fmt"
 
-type largearray [1000]int
+type largearray [7]int
 
 func Sum(a *largearray) (sum int) {
 	for _, value := range *a {
