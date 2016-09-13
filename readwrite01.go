@@ -72,7 +72,7 @@ func writeLines(lines []string, path string) (err error) {
 }
 
 func main() {
-    lines, err := readLines("chem01.json",1000)
+    lines, err := readLines("chem01.json",2016)
     if err != nil {
         fmt.Println("Error: %s\n", err)
         return
