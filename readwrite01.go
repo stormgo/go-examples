@@ -10,7 +10,7 @@ import (
 )
 
 // Read a whole file into the memory and store it as array of lines
-func readLines(path string) (lines []string, err error) {
+func readLines(path string, numoflines int) (lines []string, err error) {
     var (
         file *os.File
         part []byte
@@ -23,6 +23,7 @@ func readLines(path string) (lines []string, err error) {
 
     reader := bufio.NewReader(file)
     buffer := bytes.NewBuffer(make([]byte, 0))
+    linecount := 0
     for {
         if part, prefix, err = reader.ReadLine(); err != nil {
             break
@@ -31,6 +32,11 @@ func readLines(path string) (lines []string, err error) {
         if !prefix {
             lines = append(lines, buffer.String())
             buffer.Reset()
+        }
+        fmt.Print(linecount, " ")
+        linecount++
+        if linecount > numoflines {
+            break
         }
     }
     if err == io.EOF {
@@ -66,7 +72,7 @@ func writeLines(lines []string, path string) (err error) {
 }
 
 func main() {
-    lines, err := readLines("readwrite01.txt")
+    lines, err := readLines("readwrite01.txt",2)
     if err != nil {
         fmt.Println("Error: %s\n", err)
         return
