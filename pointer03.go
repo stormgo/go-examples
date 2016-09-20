@@ -20,17 +20,17 @@ func Modify3(u **User) {
 
 func main() {
   u1 := &User{Name: "Leto"}
-  println(u1.Name)
+  println(u1.Name)    // Leto
   Modify1(u1)
-  println(u1.Name)
+  println(u1.Name)    // Leto
 
   u2 := User{Name: "Leto"}
-  println(u2.Name)
+  println(u2.Name)    // Leto
   Modify2(u2)
-  println(u2.Name)
+  println(u2.Name)    // Leto
 
   u3 := &User{Name: "Leto"}
-  println(u3.Name)
+  println(u3.Name)    // Leto
   Modify3(&u3)
-  println(u3.Name)
+  println(u3.Name)    // Bob
 }
