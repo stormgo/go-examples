@@ -16,6 +16,7 @@ func zerop(xPtr *int) {
 
 
 func hundred(xPtr *int) {
+	fmt.Println("xPtr = ", xPtr)
 	*xPtr = 100
 }
 
@@ -29,6 +30,7 @@ func main() {
 	var p *int
 	i := 42
 	p = &i
+	fmt.Println("p =    ", p)
 	hundred(p)
 	fmt.Println(i) // i is 100
 }
