@@ -8,4 +8,8 @@ So each one of these programs can be run this way:
 go run filename
 ```
 
-2016 august 18
+[Notes]
+(notes.md)
+
+[Tutorials]
+(tutorials.md)
