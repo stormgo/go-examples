@@ -1,3 +1,5 @@
+// http://stackoverflow.com/questions/20848236/passing-pointer-through-channel-in-go-lang
+
 package main
 
 type Data struct {
